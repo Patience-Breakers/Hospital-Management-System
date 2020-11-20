@@ -77,34 +77,20 @@
                         <h2 class="loginheader text-center"><b>Login </b></h2>
                         <!-- <a href="tel:+91 1234567891"> <button id="commonbuttons"><b>Call Us</b></button></a> -->
                     </div>
-                    <form action="login" method="POST">
-<<<<<<< HEAD
-                         {% csrf_token %}
-                    
-=======
-                        {% csrf_token %}
->>>>>>> e6b1703deb522d9c53f6d5bf32d6006c26feaff4
+                    <form action="">
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name = "username" placeholder="username"
+                            <input type="text" class="form-control" placeholder="username"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="password" class="form-control" name = "password" placeholder="password"
+                            <input type="password" class="form-control" placeholder="password"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div><br>
                         <input id="commonbuttons" type="submit">
-                    </form>
-                    {% for message in messages %}
-                      <h3>{{message}}</h3>
-                    {% endfor %}
 
-                    <div>
-                        {% for message in messages %}
-                        <h3>{{message}}</h3>
-                        {% endfor %}
-                    </div>
+                    </form>
 
                 </div>
 
