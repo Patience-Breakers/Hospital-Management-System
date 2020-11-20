@@ -78,54 +78,55 @@
                         <!-- <a href="tel:+91 1234567891"> <button id="commonbuttons"><b>Call Us</b></button></a> -->
                     </div>
                     <form action="addPatient" method="POST">
+                    {% csrf_token %}
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="name" placeholder="username"
+                            <input type="text" class="form-control" name="name" placeholder="name"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="password" class="form-control" name="age" placeholder="password"
+                            <input type="password" class="form-control" name="age" placeholder="age"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="gender" placeholder="username"
+                            <input type="text" class="form-control" name="gender" placeholder="gender"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="temperature" placeholder="username"
+                            <input type="text" class="form-control" name="temperature" placeholder="temperature"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="o2level" placeholder="username"
+                            <input type="text" class="form-control" name="o2level" placeholder="o2level"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="date" placeholder="username"
+                            <input type="text" class="form-control" name="date" placeholder="date"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="address" placeholder="username"
+                            <input type="text" class="form-control" name="address" placeholder="address"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="symptoms" placeholder="username"
+                            <input type="text" class="form-control" name="symptoms" placeholder="symptoms"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="exitingdisease" placeholder="username"
+                            <input type="text" class="form-control" name="exitingdisease" placeholder="exitingdisease"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         <div class="input-group mb-3">
 
-                            <input type="text" class="form-control" name="status" placeholder="username"
+                            <input type="text" class="form-control" name="status" placeholder="status"
                                 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                         </div>
                         
