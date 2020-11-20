@@ -4,6 +4,8 @@ from django.db import models
 
 class patient(models.Model):
     name = models.TextField()
+    age = models.IntegerField()
+    gender = models.CharField()
     temperature = models.TextField()
     o2level= models.TextField()
     date = models.TextField()
