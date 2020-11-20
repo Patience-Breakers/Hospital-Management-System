@@ -30,9 +30,20 @@ def buttons(request):
         pat.o2level = request.POST['o2level']
         pat.date = request.POST['date']
         pat.address = request.POST['address']
-        pat.symptoms = request.POST['sympomts']
-        pat.existingdisease = request.POST['existingdisease']
-        pat.status = request.POST['status']
+        if 'symptoms' in request.POST:
+            pat.symptoms = request.POST['symptoms']
+        else:
+            is_private = False
+        
+        if 'existingdisease' in request.POST:
+            pat.existingdisease = request.POST['existingdisease']
+        else:
+            is_private = False
+        
+        if 'status' in request.POST:
+            pat.status = request.POST['status']
+        else:
+            is_private = False
         pat.save()
         messages.info(request, 'User Created')
         return redirect('index')
