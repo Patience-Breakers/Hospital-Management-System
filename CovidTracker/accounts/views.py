@@ -14,12 +14,17 @@ def login(request):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
+<<<<<<< HEAD
             return redirect('dashboard')
+=======
+            return render(request, 'dashboard.html')
+>>>>>>> c8341ab479aa88affaf504bf9dccc9d8631685c7
         else:
             messages.info(request, 'Invalid credentials')
             return redirect('login')
     else:
         return render(request,'login.html')
+
 def buttons(request):
     if request.method == 'POST':
         pat =patient()
