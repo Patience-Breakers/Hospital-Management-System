@@ -78,6 +78,7 @@
                         <!-- <a href="tel:+91 1234567891"> <button id="commonbuttons"><b>Call Us</b></button></a> -->
                     </div>
                     <form action="addPatient" method="POST">
+                    {% csrf_token %}
                         <div class="input-group mb-3">
 
                             <input type="text" class="form-control" name="name" placeholder="name"
