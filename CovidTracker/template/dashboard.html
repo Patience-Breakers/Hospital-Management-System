@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard of Cases</title>
+    <link rel="shortcut icon"
+        href="https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605866352/Images%20for%20UNSCRIPT%20ROOKIE/favicon/logo_transparent_background_u9eopl.png">
+    <!--todo CSS sytlesheets links-->
+    <link rel="stylesheet" href="https://res.cloudinary.com/dnv3ztqf1/raw/upload/v1605867164/css/css/hdft_u0v8ky.css">
+    <!--todo fonts links-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <!--todo Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        #black {
+            font-weight: 800;
+            color: black;
+        }
+
+        #white {
+            font-weight: 800;
+            color: white;
+        }
+
+        /*  #titleofcard {
+            color: white;
+        }*/
+        .card-body-1 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876829/css/dashboard/undraw_celebration_0jvk_ljsmrt.svg");
+        }
+
+        .card-body-2 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/undraw_feeling_blue_4b7q_sh9euk.svg");
+        }
+
+        .card-body-3 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/feature_cardiacoutput_j8tejl.png");
+        }
+
+        .card-body-4 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/bed_zvoofz.svg");
+        }
+
+        .card-body-5 {
+            height: 250px;
+            background-image: url("https://res.cloudinary.com/dnv3ztqf1/image/upload/v1605876828/css/dashboard/ventilation_kethso.svg");
+        }
+    </style>
+    <!--todo navbar starts here-->
+    <nav class="navbar navbar-expand-lg sticky-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <section id="leftlogo">
+                    <img src="/assets/logos/navbarlogo.png" class="d-inline-block align-top" loading="lazy">
+                </section>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="navbar-toggler-icon">≡</span>
+            </button>
+            <!--contents---->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="link-background">
+                        <a href="/index.html" class="nav-link left">Home</a>
+                    </li>
+                    <li>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search Patient"
+                                aria-label="Search">
+                            <button class="btn btn-danger my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!------>
+        </div>
+    </nav>
+    <!--todo navbar ends here-->
+    <!--todo dashboard starts here-->
+    <div class="container">
+        <br><br>
+        <h1 class="display-3 text-center">Dashboard</h1><br><br>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div id="titleofcard" class="card-header">
+                        <h1>Recovered</h1>
+                    </div>
+                    <div class="card-body-1">
+                        <h1 id="white" id="bold" class="card-title">125</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div id="black" class="card-header">
+                        <h1>Admitted</h1>
+                    </div>
+                    <div class="card-body-2">
+                        <h1 id="black" id="bold" class="card-title">125</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div id="white" class="card-header">
+                        <h1>Decreased</h1>
+                    </div>
+                    <div class="card-body-3">
+                        <h1 id="white" id="bold" class="card-title">125</h1>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row text-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 text-center">
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div id="white" class="card-header">
+                        <h1>Beds Free</h1>
+                    </div>
+                    <div class="card-body-4">
+                        <h1 id="white" class="card-title">125</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-white bg-light mb-3" style="max-width: 18rem;">
+                    <div id="black" class="card-header">
+                        <h1>Ventilators </h1>
+
+                    </div>
+                    <div class="card-body-5">
+                        <h1 id="black" class="card-title">125</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+
+
+        </div>
+    </div>
+    <!--todo dashboard ends here-->
+    <!--todo buttons below starts here-->
+    <br><br>
+    <div class="container">
+        <h1 class="display-3 text-center">Patient Database </h1>
+        <br><br>
+        <div class="row ">
+            <div class="col-md-6 text-right">
+                <button id="commonbuttons">Add Patient</button>
+            </div>
+            <div class="col-md-6">
+                <button id="commonbuttons">Edit Patient</button>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--todo buttons below ends here-->
+    <!--todo waves starts here-->
+    <div class="outer_box_for_waves">
+        <section id="wavesbelownavbar">
+            <img src="/assets/logos/abovefootersvg.svg" alt="">
+        </section>
+    </div>
+    <!--todo waves ends here-->
+    <!--todo footer starts here-->
+    <div class="footer_bottom">
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 footer_about_section">
+                    <h3><b>About Us</b></h3>
+                    <p class="text-justify about_footer">The Unscript Hospital Provides You with quality testing and
+                        services mainly oriented for coronavirus Cases.</p>
+                    <a href="#"><button id="commonbuttons"><b>Know More</b></button></a>
+                </div>
+                <div class="col-md-3 footer_quicklinks_section">
+                    <h3><b>Quick Links</b></h3>
+                    <ul class="footer-links">
+                        <li><a href="About.html">About Me </a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="bloghome.html">Blogs</a></li>
+                        <li><a href="fun.html">Fun</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 footer_contact_section">
+                    <h3><b>Contact Me</b></h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:aakashcoder1210@gmail.com?subject =Hello Aakash = Message"><i
+                                    style="padding-right: 3%;" class="fa fa-2x fa-envelope"
+                                    aria-hidden="true"></i>unscripthospital@gmail.com</a></li>
+                        <li><a href="tel:+91 1234567891"><i style="padding-right: 3%;" class="fa fa-2x fa-phone"
+                                    aria-hidden="true"></i>1234567891</a></li>
+                    </ul>
+                    <br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <a href="https://github.com/AakashCode12" target="_blank"><i id="github"
+                                        class="fa fa-3x fa-github" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://www.linkedin.com/in/aakash-yadav-a30627190/" target="_blank"><i
+                                        id="linkedin" class="fa fa-3x fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://www.instagram.com/aakash_igram/" target="_blank"><i id="instagram"
+                                        class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="https://twitter.com/Aakashv0007" target="_blank"><i id="twitter"
+                                        class="fa fa-3x fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <!--todo footer ends here-->
+    <!-- todo jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

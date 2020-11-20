@@ -13,5 +13,4 @@ class patient(models.Model):
     symptoms = models.TextField()
     exitingdisease =models.TextField()
     status = models.CharField
-    ## Recovered ,Admitted or Decreased
   
