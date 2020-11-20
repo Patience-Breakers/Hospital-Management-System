@@ -12,5 +12,6 @@ class patient(models.Model):
     address = models.TextField()
     symptoms = models.TextField()
     exitingdisease =models.TextField()
-    status = models.CharField
+    status = models.CharField()
+    # admitted , recovered , decreased
   
