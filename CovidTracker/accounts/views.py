@@ -51,4 +51,6 @@ def buttons(request):
         return redirect('index')
     else:
         return render(request, '3buttons.html')
+def search(request):
+    
 
