@@ -52,5 +52,11 @@ def buttons(request):
     else:
         return render(request, '3buttons.html')
 def search(request):
-    
+    nme = request.POST['name']
+    patients = patient.objects.all
+    for pat in patients:
+        if nme==pat.name:
+            return render(request, 'seach.html', {'patient':patient})
+
+
 
